@@ -2,7 +2,7 @@
 
 - I'm currently a Data Science and AI student at the Federal University of Paraíba - UFPB.
 - I have acquired proficiency in Python and C programming languages, and I thoroughly enjoy programming in these languages.
-- I recently took on the role of a University monitor for Computer Introduction, where I have been able to develop my soft skills and learn effective techniques for explaining complex concepts to others. This experience has ignited my passion for teaching.
+- I recently took on the role of a University monitor for Computer Introduction, where I have been able to develop my soft skills and learn effective techniques for explaining complex concepts to others. This experience made me improve my code and explain my ideas in a better way.
 - I am highly enthusiastic about continuous learning and thrive on discovering new knowledge and generating fresh insights.
 ### Skills 🏆 :
 
