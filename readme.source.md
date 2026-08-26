@@ -1,11 +1,5 @@
-```aura width=800 height=90 inline align=center
-<div style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'Inter, sans-serif' }}>
-  <span style={{ padding: '6px 14px', background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.55)', borderRadius: 100, fontSize: 12, border: '1px solid rgba(255,255,255,0.1)', letterSpacing: 1 }}>Profile views <span style={{ color: '#7c5cff', fontWeight: 700 }}>{String((github && github.user && github.user.followers) || 0)}</span></span>
-</div>
-```
-
 ```aura width=800 height=420
-<div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#07070c', borderRadius: 24, overflow: 'hidden', fontFamily: 'Inter, sans-serif' }}>
+<div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#07070c', borderRadius: 24, overflow: 'hidden', fontFamily: 'Poppins, sans-serif' }}>
   <style>{`
     @keyframes glow-a { 0%, 100% { transform: translate(0,0); opacity: 0.55; } 50% { transform: translate(26px,-18px); opacity: 0.85; } }
     @keyframes glow-b { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(-20px,16px); opacity: 0.7; } }
@@ -34,18 +28,17 @@
   </svg>
 
   <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10, marginTop: 30 }}>
-    <span style={{ fontSize: 58, fontWeight: 800, letterSpacing: 10, color: '#ffffff', textShadow: '0 0 40px rgba(155,110,255,0.6)' }}>
-      {((github && github.user && (github.user.name || github.user.login)) || 'THIAGO').toUpperCase()}
+    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: 58, fontWeight: 700, letterSpacing: 6, color: '#ffffff', textShadow: '0 0 40px rgba(155,110,255,0.6)' }}>
+      {'Thiago Rodrigues'.toUpperCase()}
     </span>
-    <span style={{ fontSize: 14, color: 'rgba(220,205,255,0.85)', marginTop: 18, letterSpacing: 6, textTransform: 'uppercase', fontWeight: 600 }}>Systems Programmer</span>
-    <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 10, letterSpacing: 3, textTransform: 'uppercase', fontWeight: 400 }}>Performance Engineer · OSDev</span>
-    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.28)', marginTop: 8, letterSpacing: 2 }}>x86/ARM internals · bare-metal · SoC validation</span>
+    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: 14, color: 'rgba(220,205,255,0.85)', marginTop: 18, letterSpacing: 6, textTransform: 'uppercase', fontWeight: 600 }}>Data Scientist &amp; AI Engineer</span>
+    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 10, letterSpacing: 3, textTransform: 'uppercase', fontWeight: 400 }}>Software Engineering</span>
     <span style={{ fontSize: 11, color: 'rgba(124,92,255,0.7)', marginTop: 16, letterSpacing: 1 }}>
-      github.com/{(github && github.user && github.user.login) || 'thiagorcj'}
+      github.com/{(github && github.user && github.user.login) || 'Thiagorcj'}
     </span>
 
     <div style={{ display: 'flex', gap: 8, marginTop: 30, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 620 }}>
-      {['C', 'C++', 'x86 ASM', 'Python', 'JavaScript', 'Rust', 'GLSL', 'OpenGL'].map((tag) => (
+      {['Python', 'TensorFlow', 'PyTorch', 'Pandas', 'Scikit-learn', 'SQL', 'Docker', 'AWS'].map((tag) => (
         <span key={tag} style={{ padding: '7px 16px', background: 'rgba(255,255,255,0.045)', color: 'rgba(255,255,255,0.75)', borderRadius: 100, fontSize: 12, border: '1px solid rgba(255,255,255,0.1)', fontWeight: 500 }}>{tag}</span>
       ))}
     </div>
@@ -54,7 +47,7 @@
 ```
 
 ```aura width=800 height=150
-<div style={{ display: 'flex', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, borderTop: '1px solid rgba(255,255,255,0.06)', fontFamily: 'Inter, sans-serif' }}>
+<div style={{ display: 'flex', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, borderTop: '1px solid rgba(255,255,255,0.06)', fontFamily: 'Poppins, sans-serif' }}>
   {[
     { label: 'Stars', value: (github && github.stats && github.stats.totalStars) || 0, color: '#f5c451' },
     { label: 'Forks', value: (github && github.stats && github.stats.totalForks) || 0, color: '#ffffff' },
@@ -70,7 +63,7 @@
 ```
 
 ```aura width=800 height=230
-<div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, padding: 30, fontFamily: 'Inter, sans-serif' }}>
+<div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, padding: 30, fontFamily: 'Poppins, sans-serif' }}>
   <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', letterSpacing: 3, textTransform: 'uppercase', fontWeight: 600, marginBottom: 18 }}>Stack Analytics</span>
 
   <div style={{ display: 'flex', width: '100%', height: 10, borderRadius: 6, overflow: 'hidden' }}>
@@ -92,7 +85,7 @@
 ```
 
 ```aura width=800 height=260
-<div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, padding: 30, fontFamily: 'Inter, sans-serif' }}>
+<div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', background: '#07070c', borderRadius: 20, padding: 30, fontFamily: 'Poppins, sans-serif' }}>
   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
     <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', letterSpacing: 3, textTransform: 'uppercase', fontWeight: 600 }}>Activity Pulse</span>
     <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)' }}>updated automatically</span>
@@ -113,20 +106,20 @@
 </div>
 ```
 
-```aura width=140 height=48 link="https://github.com/thiagorcj" inline align=center
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(255,255,255,0.12)', fontFamily: 'Inter, sans-serif' }}>
+```aura width=140 height=48 link="https://github.com/Thiagorcj" inline align=center
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(255,255,255,0.12)', fontFamily: 'Poppins, sans-serif' }}>
   <span style={{ fontSize: 13, color: '#ffffff', fontWeight: 600, letterSpacing: 0.5 }}>GitHub</span>
 </div>
 ```
 
-```aura width=140 height=48 link="https://linkedin.com/in/thiagorcj" inline align=center
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(90,140,255,0.35)', fontFamily: 'Inter, sans-serif' }}>
+```aura width=140 height=48 link="https://www.linkedin.com/in/thiago-rodrigues-b8a328249/" inline align=center
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(90,140,255,0.35)', fontFamily: 'Poppins, sans-serif' }}>
   <span style={{ fontSize: 13, color: '#8fb2ff', fontWeight: 600, letterSpacing: 0.5 }}>LinkedIn</span>
 </div>
 ```
 
-```aura width=140 height=48 link="mailto:you@example.com" inline align=center
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(124,92,255,0.35)', fontFamily: 'Inter, sans-serif' }}>
+```aura width=140 height=48 link="mailto:thiago.rodrigues.cruz.justino@gmail.com" inline align=center
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0d13', borderRadius: 10, border: '1px solid rgba(124,92,255,0.35)', fontFamily: 'Poppins, sans-serif' }}>
   <span style={{ fontSize: 13, color: '#b9a4ff', fontWeight: 600, letterSpacing: 0.5 }}>Email</span>
 </div>
 ```
